@@ -1,20 +1,31 @@
 # Petrol Pump Daily Reading
 
-Daily petrol and diesel readings, collections, and expenses.
+A simple Petrol Pump POS system for managing daily petrol and diesel readings, collections, udhaar, and expenses.
+
+## Features
+
+- Separate Petrol and Diesel readings and history
+- Automatic reading and collection calculations
+- Daily expense and udhaar tracking
+- Other Collection entry
+- Saved daily records
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Install dependencies:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
 ## Build
 
-```sh
+```bash
 npm run build
 ```
