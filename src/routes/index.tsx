@@ -136,7 +136,7 @@ function Index() {
   const input = "w-full rounded-lg border-2 border-input bg-card px-4 py-3 text-lg focus:border-primary focus:outline-none";
 
   return (
-    <div className="min-h-screen">
+    <div className="flex-1">
       <header className="bg-accent text-accent-foreground">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-5">
           <span className="text-3xl">⛽</span>

@@ -114,8 +114,22 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="flex min-h-screen flex-col">
+        <div className="flex-1">
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </div>
+        <footer className="border-t bg-card/60">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              Crafted by <span className="font-medium text-foreground">Abdul Samad</span>
+            </p>
+            <p className="sm:text-right">
+              <span className="font-medium text-foreground">A Vyntrix Nova Company</span>
+            </p>
+          </div>
+        </footer>
+      </div>
     </QueryClientProvider>
   );
 }
